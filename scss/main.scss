@@ -1,5 +1,11 @@
 @import "vars";
 @import "mixins";
+
+.contents {
+  width: 1440px;
+  margin: auto;
+}
+
 .titleBox {
   line-height: 1.5;
   h2 {
@@ -162,8 +168,6 @@
   #news {
     padding: 100px 0;
     .contents {
-      width: 1440px;
-      margin: auto;
       .list {
         display: flex;
         justify-content: space-between;
@@ -235,8 +239,6 @@
   // new end
   #cs {
     .contents {
-      width: 1440px;
-      margin: auto;
       ul {
         display: flex;
         justify-content: space-between;

@@ -1,3 +1,5 @@
+.contents { width: 1440px; margin: auto; }
+
 .titleBox { line-height: 1.5; }
 
 .titleBox h2 { margin-bottom: 50px; font-size: 3.6rem; font-weight: 600; }
@@ -62,8 +64,6 @@
 
 #main #news { padding: 100px 0; }
 
-#main #news .contents { width: 1440px; margin: auto; }
-
 #main #news .contents .list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 50px; }
 
 #main #news .contents .list li { width: 31.33%; }
@@ -89,8 +89,6 @@
 #main #news .contents .list li a .txtBox .txt { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 #main #news .contents .btns { margin-top: 50px; }
-
-#main #cs .contents { width: 1440px; margin: auto; }
 
 #main #cs .contents ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
