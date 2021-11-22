@@ -51,6 +51,7 @@
                     <a href="">네오포레 CUP <span class="material-icons">east</span></a>
                 </li>
             </ul>
+            <div class="scroll"></div>
         </div>
         <div class="btns">
             <button class="btn prev"><span class="material-icons"> navigate_before </span></button>

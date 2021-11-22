@@ -9,6 +9,18 @@
   * {
     box-sizing: border-box;
   }
+  #main {
+    #product {
+      .list {
+        .scroll {
+          display: block;
+        }
+      }
+      .btns {
+        display: none;
+      }
+    }
+  }
   .contents {
     width: 100%;
     padding: 0 50px;
@@ -104,7 +116,44 @@
 }
 
 @media all and (max-width: 640px) {
+  .titleBox {
+    h2 {
+      font-size: $large-size;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: $normal-size;
+    }
+  }
   #main {
+    #mainVisual {
+      .slogan {
+        .main {
+          font-size: $x-large-size;
+        }
+        .sub {
+          font-size: $normal-size;
+        }
+        a {
+          height: 50px;
+        }
+        .pagination {
+          .swiper-pagination-bullet {
+            height: 14px;
+            width: 14px;
+            &-active {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+    #product {
+      .titleBox {
+        left: 30px;
+        top: 30px;
+      }
+    }
     #news {
       .contents {
         .list li {

@@ -56,6 +56,10 @@
 
 #main #product .list li a:hover { color: #fff; background-color: #111111; }
 
+#main #product .list .scroll { display: none; position: absolute; bottom: 20px; height: 4px; left: 20px; right: 20px; background-color: rgba(0, 0, 0, 0.5); border-radius: 100px; z-index: 2; }
+
+#main #product .list .scroll .swiper-scrollbar-drag { background-color: black; }
+
 #main #product .btns { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; bottom: 0; left: 0; z-index: 2; }
 
 #main #product .btns button { background-color: #fff; border-radius: 0; border: none; width: 100px; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }

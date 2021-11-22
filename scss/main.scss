@@ -144,6 +144,20 @@
           }
         }
       }
+      .scroll {
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        height: 4px;
+        left: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 100px;
+        z-index: 2;
+        .swiper-scrollbar-drag {
+          background-color: rgba(0, 0, 0, 1);
+        }
+      }
     }
     .btns {
       display: flex;
