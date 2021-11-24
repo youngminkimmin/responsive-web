@@ -9,6 +9,23 @@
   * {
     box-sizing: border-box;
   }
+  #header {
+    #logo {
+      left: 20px;
+    }
+    .etc {
+      right: 20px;
+    }
+    #gnb {
+      .list {
+        > li {
+          > a {
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
   #main {
     #product {
       .list {
@@ -29,6 +46,88 @@
     .contents {
       .link {
         right: 50px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  #header {
+    #logo {
+    }
+    #gnb {
+      z-index: 2;
+      background-color: #fff;
+      color: $text-color;
+      position: fixed;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      padding-top: 80px;
+      .list {
+        flex-direction: column;
+        align-items: flex-start;
+        > li {
+          width: 100%;
+          > a {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid $border-color;
+            justify-content: flex-start;
+          }
+          .depth02 {
+            position: relative;
+            display: none;
+            padding: 8px 0;
+            li {
+              a {
+                height: auto;
+                justify-content: flex-start;
+                padding: 15px 0 15px 50px;
+                font-size: $normal-size;
+                position: relative;
+                line-height: 1;
+                &:before {
+                  @include pseudo();
+                  @include box(3px);
+                  border-color: $main-color;
+                  left: 40px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .close {
+      z-index: 3;
+      color: $text-color;
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    .all {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      //background-color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5px 0;
+      box-sizing: border-box;
+
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
       }
     }
   }

@@ -33,3 +33,6 @@ const productSlider = new Swiper("#product .list", {
     },
   },
 });
+
+const gnbItem = document.querySelector("#gnb > .list > li");
+console.log(gnbItem);
